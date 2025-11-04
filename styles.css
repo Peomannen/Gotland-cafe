@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #fcfbf2;
+}
+
+.navbar {
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-left {
+    display: flex;
+    gap: 20px;
+}
