@@ -32,6 +32,20 @@ body {
 }
 
 /* Hero section styles */
+
 .hero {
     height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('/images/fika.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    color: #3b3b3b;
+    margin-bottom: 20px;
 }
