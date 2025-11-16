@@ -1,11 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: #fcfbf2;
+    
 }
 
 body {
     font-family: "Playfair Display", sans-serif;
+    background-color: #fcfbf2;
 }
 
 
@@ -19,6 +20,12 @@ body {
     display: flex;
     gap: 20px;
     margin: 20px;
+}
+
+.nav-right a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
 }
 .nav-left {
     margin: 20px;
