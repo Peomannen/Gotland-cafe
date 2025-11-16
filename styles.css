@@ -9,7 +9,7 @@ body {
     background-color: #fcfbf2;
 }
 
-
+ /*Navbar styles*/
 .navbar {
    display: flex;
     justify-content: space-between;
@@ -29,4 +29,9 @@ body {
 }
 .nav-left {
     margin: 20px;
+}
+
+/* Hero section styles */
+.hero {
+    height: 70vh;
 }
