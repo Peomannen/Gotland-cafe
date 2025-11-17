@@ -34,18 +34,73 @@ body {
 /* Hero section styles */
 
 .hero {
-    height: 70vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative;
     background-image: url('/images/fika.png');
     background-size: cover;
     background-position: center;
+
+}
+
+
+/* Add overlay */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* black overlay at 40% opacity */
+    z-index: 1;
+}
+
+/* Hero content on top */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: #fff; /* now your text will stand out */
 }
 
 .hero-content h2 {
     font-size: 48px;
-    color: #3b3b3b;
+    color: #fff;
     margin-bottom: 20px;
+}
+
+
+.menu-preview {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.menu-preview h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #3b3b3b;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.menu-item {
+    background-color: #fff8f0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
