@@ -1,3 +1,16 @@
+
+
+/*
+Ideer för förbättringar:
+hade varit bra med en hamburgar meny för mobilen istället för att bara krympa navbaren.
+i meny sektionen kan man ändra den tredje containern (smörgåsen) så att den hamnar i mitten istället för att vara till vänster direkt under den första bilden. det här är när skärmen går från 869px till 579px.
+*/
+
+
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -224,4 +237,24 @@ body {
     text-align: center;
     padding: 20px;
     font-size: 14px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh;
+    }
+    .hero-content h2 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+        padding: 0px;
+    }
+}
+@media (max-width: 86px) {
+    .about-container {
+        grid-template-columns: 1fr;
+    }
 }
