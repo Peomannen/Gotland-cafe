@@ -239,6 +239,8 @@ body {
     font-size: 14px;
 }
 
+
+
 /* Responsive styles */
 @media (max-width: 768px) {
     .hero {
@@ -253,8 +255,22 @@ body {
         padding: 0px;
     }
 }
-@media (max-width: 86px) {
+
+@media (max-width: 870px) {
     .about-container {
         grid-template-columns: 1fr;
+    }
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.menu-item {
+        /* This makes sure each box takes up roughly half the width */
+        /* (The 40px is to account for the gap) */
+        flex: 1 1 calc(50% - 40px);
+        max-width: 350px; /* Adjust this to make the boxes the size you like! */
     }
 }
