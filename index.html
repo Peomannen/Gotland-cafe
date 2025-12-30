@@ -19,6 +19,12 @@
       <a href ="#location">Hitta Café</a>
     </div>
 
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
   </div>
 
 
@@ -92,5 +98,23 @@
   </footer>
     
     
+
+
+
+
+  <script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.querySelector(".nav-right");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+
+  document.querySelectorAll('.nav-right a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+    });
+});
+</script>
 </body>
 </html>
