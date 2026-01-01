@@ -32,7 +32,7 @@ body {
     background-color: #fcfbf2;
     box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
 }
-.navbar ul{
+nav ul{
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -58,10 +58,31 @@ nav a:hover{
 }
 
 nav li:first-child{
-    margin-right: auto;;
+    margin-right: auto;
+}
+/* sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #fcfbf2ae;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    display: none; 
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
-
+.sidebar li{
+  width: 100%;
+}
+.sidebar a{
+  width: 100%;
+}
 
  /*Navbar styles
 .navbar {

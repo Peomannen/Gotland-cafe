@@ -8,22 +8,23 @@
 </head>
 <body>
     <nav class ="navbar">
-      <ul>
+      <ul class="sidebar">
       <li><a href ="#">Gotland Café</a></li>
       <li><a href ="#">Hem </a></li>
       <li><a href ="#">Meny</a></li>
       <li><a href ="#">Om oss</a></li>
       <li><a href ="#">Hitta Café</a></li>
     </ul>
+      <ul>
+      <li><a href ="#">Gotland Café</a></li>
+      <li><a href ="#">Hem </a></li>
+      <li><a href ="#">Meny</a></li>
+      <li><a href ="#">Om oss</a></li>
+      <li><a href ="#">Hitta Café</a></li>
+      <li onclick=showSidebar()><a href ="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
     </nav>
 
-    <div class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-
-  </div>
 
 
         <section class="hero">
@@ -100,19 +101,11 @@
 
 
 
-  <script>
-  const hamburger = document.getElementById("hamburger");
-  const navLinks = document.querySelector(".nav-right");
-
-  hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-  });
-
-  document.querySelectorAll('.nav-right a').forEach(link => {
-    link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-    });
-});
+<script>
+  function showSidebar(){
+    const sidebar = document.querySelector('.sidebar') 
+    sidebar.style.display = 'flex';
+  }
 </script>
 </body>
 </html>
