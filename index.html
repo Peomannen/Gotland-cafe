@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gotland Café</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class ="navbar">
@@ -31,6 +32,7 @@
           <div class="hero-content" id="home">
             <h2>Välkommen till Gotland Café</h2>
             <p>Njut av lokalt rostat kaffe och hembakade bakelser i hjärtat av Gotland.</p>
+            <a href="#menu-preview" class="cta-button">Se vår meny</a>
           </div>
         </section>
 
@@ -102,16 +104,15 @@
 
 
 <script>
-  function showSidebar(){
-    const sidebar = document.querySelector('.sidebar') 
-    sidebar.style.display = 'flex';
-  }
-</script>
-<script>
-  function hideSidebar(){
-    const sidebar = document.querySelector('.sidebar') 
-    sidebar.style.display = 'none';
-  }
+    function showSidebar() {
+        document.querySelector('.sidebar').classList.add('open');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function hideSidebar() {
+        document.querySelector('.sidebar').classList.remove('open');
+        document.body.style.overflow = 'auto';
+    }
 </script>
 </body>
 </html>
